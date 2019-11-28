@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: lightslategray;
+}
+
+.hamburger{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger div{
+    background: black;
+    height: 4px;
+    margin: 2px;
+    width: 23px;
+    
+}
+
+ul{
+    position: fixed;
+    transition: all 1s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background: blueviolet;
+    clip-path: circle(0px at 98% 3%);
+    -webkit-clip-path-: circle(0px at 98% 3%);
+    display: flex;
+    justify-content: center;
+}
+
+ul.open{
+    animation: open  3s;
+    clip-path: circle(1900px at 98% 3%);
+    -webkit-clip-path-: circle(1900px at 98% 3%);
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+ul li{ 
+    display: inline;
+    margin: 8px auto;
+    background: lightcoral;
+    padding: 10 20px;
+    border-radius: 30px;
+}
